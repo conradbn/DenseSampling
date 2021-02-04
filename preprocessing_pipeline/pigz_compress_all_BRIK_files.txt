@@ -1,0 +1,10 @@
+find /Volumes/NBL_Projects/NSF_SNP/Processed_Data -name \*.BRIK -exec pigz -v {} \;
+
+before BRIK compression (11/25/2019) -
+du -hs /Volumes/NBL_Projects/NSF_SNP/Processed_Data
+3.8T	/Volumes/NBL_Projects/NSF_SNP/Processed_Data
+
+after BRIK compression - 
+du -hs /Volumes/NBL_Projects/NSF_SNP/Processed_Data
+2.8T	
+(74% of original size)
